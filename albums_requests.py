@@ -4,7 +4,7 @@ from bottle import HTTPError
 from bottle import request
 from albums_database import DBSession, Album, DuplicateAlbumError
 
-DB_PATH = "sqlite:///albums_copy.sqlite3"
+DB_PATH = "sqlite:///albums.sqlite3"
 session = DBSession(DB_PATH)
 
 
