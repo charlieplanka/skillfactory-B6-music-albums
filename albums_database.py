@@ -17,7 +17,7 @@ class Album(Base):
 
 class DBSession():
     """
-    Create a session for DB and allow to add or find albums.
+    Creates a session for DB. Adds or finds albums.
     """
     def __init__(self, db_path):
         self.session = connect_to_db(db_path)
